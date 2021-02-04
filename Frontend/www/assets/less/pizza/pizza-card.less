@@ -1,4 +1,82 @@
+body {
+  background-color: @backgroundColor;
+
+  .badge.badge-pill.badge-secondary {
+    background-color: lighten(@mainColor, 15%);
+    color: white;
+    font-size: @fontSizePrice - 13px;
+    margin-left: 8px;
+  }
+
+  h2 {
+    display: block;
+    margin-top: 15px;
+  }
+
+  header {
+    background-color: #3c3b3b;
+    color: lightgray;
+    height: 80px;
+
+    .row {
+      height: 40px;
+      width: 100%;
+
+      div {
+        display: inline-block;
+        margin-top: 5px;
+        margin-left: 150px;
+
+        p {
+          margin: 0;
+        }
+      }
+
+      a {
+        background-color: lighten(@mainColor, 15%);
+        color: white;
+        height: 30px;
+        text-align: center;
+      }
+      a:hover,
+      a:focus,
+      a:active {
+        background-color: darken(@mainColor, 1%);
+        color: white;
+      }
+    }
+    //.line {
+    //  height: 2px;
+    //  color:  lightgray;
+    //}
+  }
+}
+
+ul {
+  justify-content: center;
+
+  a {
+    color: @mainColor;
+  }
+  a:hover,
+  a:focus,
+  a:active {
+    background-color: lighten(@mainColor, 15%);
+    color: white;
+  }
+}
+
+.nav-pills .nav-link.active {
+  background-color: lighten(@mainColor, 15%);
+  color: white;
+}
+
+//.div.col-sm-6.col-md-4 {
+//  border: 2px lightgray solid;
+//}
+
 .pizza-card {
+
   //span {
   //  background-color: red;
   //  width: 70px;
@@ -22,7 +100,14 @@
   }
 
   a {
-    background-color: lighten(@mainColor, 20%);
+    background-color: lighten(@mainColor, 15%);
+    color: white;
+  }
+  a:hover,
+  a:focus,
+  a:active {
+    background-color: darken(@mainColor, 1%);
+    color: white;
   }
 
   .row {
