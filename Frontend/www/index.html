@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Pizza</title>
 
+    <!-- Bootsrap JavaScript компілятор -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <!-- Bootsrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
@@ -12,6 +14,11 @@
     <!-- LESS JavaScript компілятор -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
 
+    <!-- jQuery JavaScript -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"> </script>
+
+    <!--Own JavaScript -->
+    <!--<script type="text/javascript"  src="assets/js/main.js"> </script>-->
 
 </head>
 <body>
@@ -20,15 +27,53 @@
     <div class="row" id="pizza_list">
         <div class="col-sm-6 col-md-4">
             <div class="thumbnail pizza-card">
+<!--                <span class="badge badge-danger pull-right">Нова</span>-->
                 <img src="assets/images/pizza_1.jpg">
 
-                <div class="caption"><h3>Thumbnail label</h3>
+                <div class="caption"><h3>Імпреза</h3>
+                    <small>М'ясна піца</small>
 
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                        Donec id elit non mi porta gravida at eget metus.
+                        Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
 
-                    <p>
-                        <a href="#" class="btn btn-primary">Button 2</a>
-                        <a href="#" class="btn btn-default">Button 1</a>
+                    <div class="row">
+                        <div class="col-sm-6" style="text-align: center; padding-left: 0">
+                            <img src="assets/images/size-icon.svg">
+                            <small>30</small>
+                        </div>
+                        <div class="col-sm-6" style="text-align: center; padding-right: 0">
+                            <img src="assets/images/size-icon.svg">
+                            <small>40</small>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-sm-6" style="text-align: center; padding-left: 0">
+                            <img src="assets/images/weight.svg">
+                            <small>370</small>
+                        </div>
+                        <div class="col-sm-6" style="text-align: center; padding-right: 0">
+                            <img src="assets/images/weight.svg">
+                            <small>660</small>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-sm-6 text-center" style="padding-left: 0">
+                            <p style="margin: 10px 0 0"><strong>99</strong></p>
+                        </div>
+                        <div class="col-sm-6 text-center" style="padding-right: 0">
+                            <p style="margin: 10px 0 0"><strong>169</strong></p>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-sm-6 text-center" style="padding-left: 0">
+                            <p>грн.</p>
+                        </div>
+                        <div class="col-sm-6 text-center" style="padding-right: 0">
+                            <p>грн.</p>
+                        </div>
+                    </div>
+
+                    <p style="padding-right: 33px; padding-left: 33px">
+                        <a href="#" class="btn btn-warning">Купити</a>
+                        <a href="#" class="btn btn-warning pull-right">Купити</a>
                     </p>
                 </div>
             </div>
@@ -36,15 +81,53 @@
 
         <div class="col-sm-6 col-md-4">
             <div class="thumbnail pizza-card">
+<!--                <span class="badge badge-success pull-right">Популярна</span>-->
                 <img src="assets/images/pizza_2.jpg">
 
-                <div class="caption"><h3>Thumbnail label</h3>
+                <div class="caption"><h3>BBQ</h3>
+                    <small>М'ясна піца</small>
 
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                        Donec id elit non mi porta gravida at eget metus.
+                        Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
 
-                    <p>
-                        <a href="#" class="btn btn-primary">Button 3</a>
-                        <a href="#" class="btn btn-default">Button 4</a>
+                    <div class="row">
+                        <div class="col-sm-6" style="text-align: center; padding-left: 0">
+                            <img src="assets/images/size-icon.svg">
+                            <small>30</small>
+                        </div>
+                        <div class="col-sm-6" style="text-align: center; padding-right: 0">
+                            <img src="assets/images/size-icon.svg">
+                            <small>40</small>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-sm-6" style="text-align: center; padding-left: 0">
+                            <img src="assets/images/weight.svg">
+                            <small>460</small>
+                        </div>
+                        <div class="col-sm-6" style="text-align: center; padding-right: 0">
+                            <img src="assets/images/weight.svg">
+                            <small>840</small>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-sm-6 text-center" style="padding-left: 0">
+                            <p style="margin: 10px 0 0"><strong>139</strong></p>
+                        </div>
+                        <div class="col-sm-6 text-center" style="padding-right: 0">
+                            <p style="margin: 10px 0 0"><strong>199</strong></p>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-sm-6 text-center" style="padding-left: 0">
+                            <p>грн.</p>
+                        </div>
+                        <div class="col-sm-6 text-center" style="padding-right: 0">
+                            <p>грн.</p>
+                        </div>
+                    </div>
+
+                    <p style="padding-right: 33px; padding-left: 33px">
+                        <a href="#" class="btn btn-warning">Купити</a>
+                        <a href="#" class="btn btn-warning pull-right">Купити</a>
                     </p>
                 </div>
             </div>
@@ -54,27 +137,56 @@
             <div class="thumbnail pizza-card">
                 <img src="assets/images/pizza_3.jpg">
 
-                <div class="caption"><h3>Thumbnail label</h3>
+                <div class="caption"><h3>Міксовий поло</h3>
+                    <small>М'ясна піца</small>
 
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                        Donec id elit non mi porta gravida at eget metus.
+                        Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
 
-                    <p>
-                        <a href="#" class="btn btn-primary">Button 5</a>
-                        <a href="#" class="btn btn-default">Button 6</a>
+                    <div class="row">
+                        <div class="col-sm-6" style="text-align: center; padding-left: 0">
+                            <img src="assets/images/size-icon.svg">
+                            <small>30</small>
+                        </div>
+                        <div class="col-sm-6" style="text-align: center; padding-right: 0">
+                            <img src="assets/images/size-icon.svg">
+                            <small>40</small>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-sm-6" style="text-align: center; padding-left: 0">
+                            <img src="assets/images/weight.svg">
+                            <small>430</small>
+                        </div>
+                        <div class="col-sm-6" style="text-align: center; padding-right: 0">
+                            <img src="assets/images/weight.svg">
+                            <small>780</small>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-sm-6 text-center" style="padding-left: 0">
+                            <p style="margin: 10px 0 0"><strong>115</strong></p>
+                        </div>
+                        <div class="col-sm-6 text-center" style="padding-right: 0">
+                            <p style="margin: 10px 0 0"><strong>179</strong></p>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-sm-6 text-center" style="padding-left: 0">
+                            <p>грн.</p>
+                        </div>
+                        <div class="col-sm-6 text-center" style="padding-right: 0">
+                            <p>грн.</p>
+                        </div>
+                    </div>
+
+                    <p style="padding-right: 33px; padding-left: 33px">
+                        <a href="#" class="btn btn-warning">Купити</a>
+                        <a href="#" class="btn btn-warning pull-right">Купити</a>
                     </p>
                 </div>
             </div>
         </div>
     </div>
+<!--    <img src="assets/images/discount.svg" class="pull-left" width="50" height="100">-->
 </div>
-
-<!-- jQuery JavaScript -->
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"> </script>
-
-<!--Bootsrap JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-<!--Own JavaScript -->
-<!--<script type="text/javascript"  src="assets/js/main.js"> </script>-->
 </body>
 </html>

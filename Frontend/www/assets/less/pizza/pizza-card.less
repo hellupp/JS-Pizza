@@ -1,10 +1,50 @@
 .pizza-card {
+  //span {
+  //  background-color: red;
+  //  width: 70px;
+  //  height: 15px;
+  //}
+
   img {
     max-width: 250px;
   }
 
   h3 {
     color: @mainColor;
-    background-color: lighten(@mainColor, 45%);
+    background-color: transparent;
+    font-weight: bold;
+    margin-bottom: 3px;
+    margin-top: 0;
   }
+
+  small {
+    color: darkgrey;
+  }
+
+  a {
+    background-color: lighten(@mainColor, 20%);
+  }
+
+  .row {
+    img {
+      width: @iconWidthHeight;
+      height: @iconWidthHeight;
+    }
+    small {
+      color: black;
+    }
+
+    .col-sm-6 {
+      strong {
+        font-size: @fontSizePrice;
+        vertical-align: bottom;
+      }
+      p {
+        font-size: @fontSizePrice - 10px;
+        vertical-align: top;
+      }
+    }
+
+  }
+
 }
